@@ -25,10 +25,14 @@ workflow, Sapat handles the command-line file processing while Moonshine
 performs [on-device speech-to-text](../definitions/20260527_definition_on_device_speech_to_text.md)
 without requiring an OpenAI, Groq, or Azure key.
 
-The companion implementation for this guide is open in
-[nibzard/sapat#54](https://github.com/nibzard/sapat/pull/54). It adds
-`--api moonshine`, converts input media to a temporary 16 kHz mono WAV file,
-and calls the official `moonshine-voice` Python package.
+The companion prototype for this guide was reviewed in
+[nibzard/sapat#54](https://github.com/nibzard/sapat/pull/54). Upstream closed
+that PR in favor of a broader provider-plugin refactor and noted that the
+Moonshine integration patterns helped shape the new architecture. Until
+Moonshine support lands in upstream `main`, the fork branch remains the
+runnable path for this guide: it adds `--api moonshine`, converts input media
+to a temporary 16 kHz mono WAV file, and calls the official `moonshine-voice`
+Python package.
 
 ![Moonshine Sapat Daytona workflow](assets/20260527_moonshine_sapat_daytona_img1.svg)
 
@@ -56,7 +60,7 @@ is normal, but do not commit model files or generated transcripts to your repo.
 ## Create the Daytona Workspace
 
 Start by creating a workspace from the Sapat fork that contains the Moonshine
-provider branch:
+prototype provider branch:
 
 ```bash
 daytona create https://github.com/jonahsills/sapat --code
@@ -69,7 +73,7 @@ git fetch origin bounty/moonshine-provider
 git switch bounty/moonshine-provider
 ```
 
-If the companion PR has already merged by the time you read this, use the
+If Moonshine support has landed upstream by the time you read this, use the
 upstream Sapat repository and its `main` branch instead:
 
 ```bash
@@ -329,4 +333,4 @@ option alongside OpenAI, Groq, and Azure.
 - [Sapat repository](https://github.com/nkkko/sapat)
 - [Moonshine Voice repository](https://github.com/moonshine-ai/moonshine)
 - [Moonshine Voice PyPI package](https://pypi.org/project/moonshine-voice/)
-- [Companion Sapat PR](https://github.com/nibzard/sapat/pull/54)
+- [Companion Sapat prototype PR](https://github.com/nibzard/sapat/pull/54)
