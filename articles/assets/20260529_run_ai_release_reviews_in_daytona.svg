@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Daytona AI release review workflow</title>
+  <desc id="desc">A workflow diagram showing Daytona launching two AI engineer workspaces for release review.</desc>
+  <rect width="1200" height="675" fill="#101418"/>
+  <rect x="72" y="70" width="1056" height="535" rx="18" fill="#171f27" stroke="#344253" stroke-width="2"/>
+  <text x="112" y="132" fill="#f8fafc" font-family="Arial, sans-serif" font-size="42" font-weight="700">AI release reviews in Daytona</text>
+  <text x="112" y="176" fill="#b9c4d0" font-family="Arial, sans-serif" font-size="22">Use isolated workspaces to turn release notes into verified migration guidance.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="116" y="250" width="245" height="150" rx="12" fill="#24445a" stroke="#5fb3d9" stroke-width="2"/>
+    <text x="146" y="307" fill="#ffffff" font-size="25" font-weight="700">Release inputs</text>
+    <text x="146" y="346" fill="#d8e4ee" font-size="18">Changelog, diff, tests</text>
+    <text x="146" y="376" fill="#d8e4ee" font-size="18">and migration notes</text>
+    <rect x="478" y="220" width="245" height="205" rx="12" fill="#243d33" stroke="#62c98d" stroke-width="2"/>
+    <text x="508" y="277" fill="#ffffff" font-size="25" font-weight="700">Omni Engineer</text>
+    <text x="508" y="316" fill="#d9f4e4" font-size="18">Map changed files</text>
+    <text x="508" y="346" fill="#d9f4e4" font-size="18">draft release notes</text>
+    <text x="508" y="376" fill="#d9f4e4" font-size="18">and find gaps</text>
+    <rect x="839" y="220" width="245" height="205" rx="12" fill="#4a3741" stroke="#e58bb2" stroke-width="2"/>
+    <text x="869" y="277" fill="#ffffff" font-size="25" font-weight="700">Claude Engineer</text>
+    <text x="869" y="316" fill="#ffe3ef" font-size="18">Challenge risks</text>
+    <text x="869" y="346" fill="#ffe3ef" font-size="18">review migrations</text>
+    <text x="869" y="376" fill="#ffe3ef" font-size="18">and propose tests</text>
+    <rect x="360" y="492" width="480" height="72" rx="10" fill="#202a35" stroke="#6b7b8f" stroke-width="2"/>
+    <text x="405" y="537" fill="#f8fafc" font-size="24" font-weight="700">Publish the final release review checklist</text>
+    <path d="M361 325 H463" stroke="#d8e4ee" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M724 325 H824" stroke="#d8e4ee" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M600 425 V481" stroke="#d8e4ee" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M962 425 C962 473 900 506 854 520" fill="none" stroke="#d8e4ee" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d8e4ee"/>
+    </marker>
+  </defs>
+</svg>
